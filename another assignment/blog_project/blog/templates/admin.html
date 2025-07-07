@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}Admin Dashboard{% endblock %}
+
+{% block content %}
+    <h2>All Posts</h2>
+    <div class="actions">
+        <a href="/admin/create/" class="button">Create New Post</a>
+    </div>
+    <div id="admin-posts-list">
+        <!-- Posts will be loaded here -->
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="/static/js/admin.js"></script>
+{% endblock %}
